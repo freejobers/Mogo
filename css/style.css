@@ -316,16 +316,19 @@ hr {
     opacity: 0;
     transition: opacity .1s linear;
 }
+
 .card__info {
     margin-top: 20px;
     text-align: center;
 }
+
 .card__name {
     text-transform: uppercase;
     font-size: 14px;
     color: #000000;
     margin-bottom: 5px;
 }
+
 .card__prof {
     color: #999999;
     font-style: italic;
@@ -503,7 +506,7 @@ hr {
 }
 
 .reviews__item {
-    padding-left: 205px;
+    padding-left: 255px;
     position: relative;
 }
 
@@ -513,7 +516,7 @@ hr {
     left: 0;
     z-index: 1;
     border: 2px solid #95e1d3;
-    padding: 40px;
+    border-radius: 50%;
 }
 
 .reviews__text {
@@ -599,7 +602,66 @@ hr {
 }
 
 /* logos */
+
 .logos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+/* works */
+
+.works {
+    display: flex;
+}
+
+.works__col {
+    flex: 1 1 0;
+}
+
+.works__item {
+    position: relative;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.works__item:hover .works__image {
+    opacity: .1;
+}
+
+.works__item:hover .works__info {
+    opacity: 1;
+}
+
+.works__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .1s linear;
+}
+
+.works__info {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translate3d(0, -50%, 0);
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+.works__title {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.works__text {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
 }
