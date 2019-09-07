@@ -14,16 +14,17 @@
 </head>
 
 <body>
-    <header class="header">
+    <!-- header -->
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">MoGo</div>
                 <nav class="nav">
-                    <a class="nav__link active" href="#">about</a>
-                    <a class="nav__link" href="#">service</a>
-                    <a class="nav__link" href="#">work</a>
-                    <a class="nav__link" href="#">blog</a>
-                    <a class="nav__link" href="#">contact</a>
+                    <a class="nav__link active" href="#" data-scroll="#about">about</a>
+                    <a class="nav__link" href="#" data-scroll="#services">service</a>
+                    <a class="nav__link" href="#" data-scroll="#works">work</a>
+                    <a class="nav__link" href="#" data-scroll="#blogs">blog</a>
+                    <a class="nav__link" href="#" data-scroll="#footer">contact</a>
                     <a href="#" class="nav__link"><i class="fas fa-shopping-cart"></i></a>
                     <a href="" class="nav__link"><i class="fas fa-search"></i></a>
                 </nav>
@@ -38,7 +39,7 @@
     <div class="page">
 
         <!-- intro -->
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
                     <h2 class="intro__suptitle">creative tamplaite</h2>
@@ -69,8 +70,8 @@
                 </div>
             </div>
         </div> <!-- ./intro -->
-        <!-- section -->
-        <section class="section">
+        <!-- about -->
+        <section class="section" id="about">
             <div class="container">
                 <div class="section__header">
                     <h3 class="section__suptitle">What we do</h3>
@@ -101,6 +102,7 @@
                 </div>
             </div>
         </section>
+        <!-- statistics -->
         <div class="statistics">
             <div class="container">
                 <div class="stat">
@@ -127,7 +129,8 @@
                 </div>
             </div>
         </div>
-        <section class="section">
+        <!-- services -->
+        <section class="section" id="services">
             <div class="container">
                 <div class="section__header">
                     <h3 class="section__suptitle">We work with</h3>
@@ -182,6 +185,7 @@
 
             </div>
         </section>
+        <!-- devices -->
         <section class="section section--devices">
             <div class="container">
                 <div class="section__header">
@@ -194,6 +198,7 @@
                 </div>
             </div>
         </section>
+        <!-- wedo -->
         <section class="section">
             <div class="container">
                 <div class="section__header">
@@ -282,6 +287,7 @@
                 </div>
             </div>
         </div>
+        <!-- team -->
         <section class="section">
             <div class="container">
                 <div class="section__header">
@@ -370,6 +376,7 @@
                 </div>
             </div>
         </section>
+        <!-- logos -->
         <div class="section section--gray">
             <div class="container">
                 <div class="logos">
@@ -382,7 +389,8 @@
                 </div>
             </div>
         </div>
-        <section class="section">
+        <!-- works -->
+        <section class="section" id="works">
             <div class="container">
                 <div class="section__header">
                     <h3 class="section__suptitle">What we do</h3>
@@ -453,7 +461,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- reviews -->
         <div class="section">
             <div class="container">
                 <div class="reviews">
@@ -471,6 +479,7 @@
                 </div>
             </div>
         </div>
+        <!-- clients -->
         <section class="section section--clients">
             <div class="container">
                 <div class="section__header">
@@ -521,7 +530,8 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <!-- blogs -->
+        <section class="section" id="blogs">
             <div class="container">
                 <div class="section__header">
                     <h3 class="section__suptitle">Our stories</h3>
@@ -620,7 +630,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- map -->
         <section class="section section--map">
             <div class="container">
                 <div class="map">
@@ -635,8 +645,8 @@
                 </div>
             </div>
         </section>
-
-        <footer class="footer">
+        <!-- footer -->
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__col footer__col--first">
@@ -737,6 +747,9 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
